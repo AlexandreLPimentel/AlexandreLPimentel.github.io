@@ -794,6 +794,12 @@ main {
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
 .timeline-item-title {
+  font-size: var(--fs-4);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-item-subtitle {
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
