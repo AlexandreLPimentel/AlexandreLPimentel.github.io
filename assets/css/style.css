@@ -64,6 +64,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --light-yellow: hsl(45, 100%, 90%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -129,7 +130,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, button, time, span { display: block; }
 
 button {
   font: inherit;
@@ -811,6 +812,18 @@ main {
   line-height: 1.6;
 }
 
+.timeline-list i {
+  color: var(--vegas-gold);
+}
+
+.timeline-list a {
+  color: var(--vegas-gold);
+}
+thin-yellow {
+  font-weight: 100;
+  color: var(--light-yellow);
+}
+
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
@@ -837,6 +850,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
 }
 
 
