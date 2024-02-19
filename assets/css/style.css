@@ -819,7 +819,8 @@ main {
 .timeline-list a {
   color: var(--vegas-gold);
 }
-thin-yellow {
+
+.thin-yellow {
   font-weight: 100;
   color: var(--light-yellow);
 }
@@ -853,6 +854,29 @@ thin-yellow {
   text-align: justify;
 }
 
+li details.timeline-text summary {
+  display: inline;
+}
+
+li details.timeline-text #show-less {
+  display: none; /* Hide "Show less" by default */
+}
+
+li details.timeline-text #show-more {
+  display: inline; /* Show "Show more" by default */
+}
+
+li details.timeline-text[open] #show-more {
+  display: none; /* Display the "Show less" link when active */
+}
+
+li details.timeline-text[open] #show-less {
+  display: inline; /* Display the "Show less" link when active */
+}
+
+li details.timeline-text:hover { 
+  cursor: pointer;
+}
 
 /**
  * skills 
