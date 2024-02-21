@@ -742,8 +742,6 @@ main {
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
-  align-items: center;
-  
 }
 
 .clients-item {
@@ -1851,7 +1849,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    max-width: 1200px;
+    max-width: 1400px;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -1873,6 +1871,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: sticky;
+    min-width: fit-content;
     top: 60px;
     max-height: max-content;
     height: 100%;
