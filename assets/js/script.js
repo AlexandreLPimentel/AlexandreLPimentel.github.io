@@ -122,3 +122,36 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+const showToast = ( 
+	message = "Sample Message", 
+	duration = 5000) => { 
+
+	let box = document.createElement("div"); 
+	box.classList.add( 
+		"toast", `toast-success`); 
+	box.innerHTML = ` <div class="toast-content-wrapper"> 
+					<div class="toast-icon"> 
+            <i class="fa-solid fa-copy"></i>
+					</div> 
+					<div class="toast-message">${message}</div> 
+					</div>`; 
+	duration = duration || 5000; 
+	let toastAlready = 
+		document.body.querySelector(".toast"); 
+	if (toastAlready) { 
+		toastAlready.remove(); 
+	} 
+	document.body.appendChild(box);
+}; 
+
+let submit = document.querySelector(".custom-toast.success-toast"); 
+
+submit.addEventListener("click",(e) => { 
+		e.preventDefault();
+    navigator.clipboard.writeText(e.target.getAttribute('href')).then(() => {
+		  showToast("Email address copied to clipboard!",5000); 
+    }, () => {
+    });
+	}); 
