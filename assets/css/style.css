@@ -530,6 +530,9 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }
 
 .service-item::before {
@@ -545,7 +548,12 @@ main {
 
 .service-icon-box img { margin: auto; }
 
-.service-content-box { text-align: center; }
+.service-content-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+ }
 
 .service-item-title { margin-bottom: 7px; }
 
