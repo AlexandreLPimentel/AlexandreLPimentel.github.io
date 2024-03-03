@@ -872,11 +872,11 @@ li details.timeline-text #show-more {
 }
 
 li details.timeline-text[open] #show-more {
-  display: none; /* Display the "Show less" link when active */
+  display: none; /* Hide "Show more" when active */
 }
 
 li details.timeline-text[open] #show-less {
-  display: inline; /* Display the "Show less" link when active */
+  display: inline; /* Show "Show less" when active */
 }
 
 li details.timeline-text:hover { 
