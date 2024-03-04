@@ -1212,6 +1212,7 @@ li details.timeline-text:hover {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .form-input::placeholder { font-weight: var(--fw-500); }
